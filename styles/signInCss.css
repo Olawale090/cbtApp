@@ -1,0 +1,158 @@
+html,
+body {
+    margin: 0;
+    background-color: #f3ecec;
+}
+
+#holder {
+    margin-top: 150px;
+}
+
+form {
+    display: grid;
+    justify-content: center;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+#mim {
+    border-radius: 60%;
+    background-image: url('../Assets/imgs/writer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 120px;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border: solid rebeccapurple 1px;
+}
+
+form>input {
+    width: 350px;
+    height: 40px;
+    border: solid rgb(199, 202, 199) 1px;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.component {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: rgb(143, 140, 140);
+    font-size: 30px;
+}
+
+#submit {
+    transition: .5s ease-in-out;
+}
+
+#submit:hover {
+    background-color: rgb(212, 209, 209);
+}
+
+#uiIcon {
+    width: 30px;
+    height: 30px;
+    left: 67%;
+    top: 18%;
+    position: absolute;
+    opacity: 0;
+}
+
+
+/*modal for succesful login*/
+
+#modalNotify {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.548);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    display: none;
+}
+
+#modalBody {
+    width: 50%;
+    height: 40%;
+    background-color: rgb(233, 235, 236);
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    left: 25%;
+    border-radius: 5px;
+}
+
+#modalNotifyFailed {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.548);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    display: none;
+}
+
+#closeBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    font-size: 15px;
+    border: none;
+    background-color: crimson;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    color: crimson;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(233, 235, 236);
+    width: 20%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#getQuestions {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: rebeccapurple;
+    border: none;
+    border-radius: 4px;
+    height: 16%;
+    width: 16%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#text {
+    color: green;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 18%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* modal for failed login */
+
+@media screen and (max-width:320px) {
+    form>input {
+        max-width: 250px;
+    }
+    #mim {
+        margin-left: 75px;
+    }
+}

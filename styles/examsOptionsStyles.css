@@ -1,0 +1,136 @@
+        body,
+        html {
+            margin: 0;
+            background-color: rgb(243, 236, 236);
+            background-image: url("../Assets/imgs/adult-architecture-backpack-1251861.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+        /* External font installation for the styling */
+        
+        @font-face {
+            font-family: Anteater;
+            src: url(Anteater.ttf);
+        }
+        
+        @font-face {
+            font-family: Walking;
+            src: url(Walking.ttf);
+        }
+        
+        #navBar {
+            width: 100%;
+            height: 40px;
+            background-color: rgb(83, 82, 82);
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        #mainContent {
+            display: grid;
+            list-style: none;
+            grid-template-columns: repeat(3, 300px);
+            grid-template-rows: repeat(2, 200px);
+            justify-content: center;
+            grid-column-gap: 20px;
+            grid-row-gap: 80px;
+            margin-top: 5%;
+        }
+        
+        #mainContent>li {
+            border: none;
+            background-color: rgba(192, 187, 187, .7);
+        }
+        
+        #mainContent>li:hover {
+            cursor: pointer;
+        }
+        
+        #mainContent>li::after {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /* box-shadow: 1.5px 1px 10px 1px black; */
+        }
+        
+        #mainContent>li:first-child::after {
+            content: 'MATHEMATICS';
+            font-size: 30px;
+            background-color: rgba(128, 128, 128, 0.733);
+            color: white;
+            display: grid;
+            grid-template-columns: 500px;
+        }
+        
+        #mainContent>li:nth-child(2)::after {
+            content: 'GENERAL STUDIES';
+            font-size: 30px;
+            background-color: rgba(17, 17, 17, 0.733);
+            color: white;
+            display: grid;
+            grid-template-columns: 500px;
+        }
+        
+        #mainContent>li:nth-child(3)::after {
+            content: 'BIOLOGY';
+            font-size: 30px;
+            background-color: rgba(128, 128, 128, 0.733);
+            color: white;
+            display: grid;
+            grid-template-columns: 500px;
+        }
+        
+        #mainContent>li:nth-child(4)::after {
+            content: 'CHEMISTRY';
+            font-size: 30px;
+            background-color: rgba(17, 17, 17, 0.733);
+            color: white;
+            display: grid;
+            grid-template-columns: 500px;
+        }
+        
+        #mainContent>li:nth-child(5)::after {
+            content: 'PHYSICS';
+            font-size: 30px;
+            background-color: rgba(128, 128, 128, 0.733);
+            color: white;
+            display: grid;
+            grid-template-columns: 500px;
+        }
+        
+        #mainContent>li:nth-child(6)::after {
+            content: 'FINE APPLIED ARTS';
+            font-size: 30px;
+            background-color: rgba(17, 17, 17, 0.733);
+            color: white;
+            display: grid;
+            grid-template-columns: 500px;
+        }
+        
+        @media screen and (max-width: 720px) {
+            #mainContent {
+                display: grid;
+                list-style: none;
+                grid-template-columns: repeat(1, 400px);
+                grid-template-rows: repeat(6, 300px);
+                justify-content: center;
+                grid-row-gap: 80px;
+            }
+        }
+        
+        @media screen and (max-width: 360px) {
+            #mainContent {
+                display: grid;
+                list-style: none;
+                grid-template-columns: repeat(1, 360px);
+                grid-template-rows: repeat(6, 200px);
+                justify-content: center;
+                grid-row-gap: 80px;
+            }
+            #mainContent>li::after {
+                font-size: 16px;
+            }
+        }
